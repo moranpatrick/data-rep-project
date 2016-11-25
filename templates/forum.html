@@ -45,7 +45,12 @@
 	</nav>
 
     <div class="form-group" style="margin-left: 20px; margin-right: 20px">
-        <textarea class="form-control" rows="5">Posts will be displayed in here</textarea>
+        <textarea class="form-control" rows="20">
+            {% for post in posts %}
+                {{ post.name }} Says:
+                {{ post.message }}
+            {% endfor %}
+        </textarea>
     </div>
 </body>
 </html>

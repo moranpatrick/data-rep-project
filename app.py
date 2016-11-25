@@ -1,18 +1,12 @@
-#Couchdb import
-import couchdb
-couch = couchdb.Server("http://localhost:5984")
 
-db = couch['forum']
 
 #Flask Imports
-from flask import Flask, render_template
+from flask import Flask, render_template, g
+import sqlite3
 
 app = Flask(__name__)
+app.database = "formData.db"
 
-#save function
-def save_post(db, post):
-    post['_email'] = post['id_postStr']
-    db.save(post)
 
 @app.route('/')
 def index():
@@ -26,8 +20,16 @@ def form():
 
 @app.route('/forum')
 def forum():
+    g.db = connect_db()
+    cur = g.db.execute('select * from postData')
+    posts = [dict(name=row[0], message=row[1]) for row in cur.fetchall()]
+    g.db.close()
     # When routed here render forum template
-    return render_template("forum.html")
+    return render_template("forum.html", posts=posts)
+
+def connect_db():
+    return sqlite3.connect(app.database)
+
 
 #Run App
 if __name__ == '__main__':

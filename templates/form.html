@@ -47,19 +47,20 @@
 	</nav>
 
     <!-- Html Form Control -->
-    <form style="margin-left: 20px; margin-right: 20px">
+    <form style="margin-left: 20px; margin-right: 20px" method="post" action="{{ url_for('form') }}">
+      <!--name input-->
       <div class="form-group">
-        <label for="emailInput">Email address</label>
-        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Please Enter your email address">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <label for="nameInput">Name</label>
+        <input type="text" class="form-control" name = "nameInput" id="nameInput" placeholder="Please Enter your name">
+        <small id="nameHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
       </div>
-
+      <!--message imput-->
       <div class="form-group">
         <label for="textArea">Enter Your Post to the Forum Below</label>
-        <textarea class="form-control" id="textArea" rows="5"></textarea>
+        <textarea type ="text" class="form-control" name = "messageInput" id="messageInput" rows="5"></textarea>
       </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" id = "submit" class="btn btn-primary">Submit</button>
     </form>
 
 </body>

@@ -1,8 +1,10 @@
 
 
 #Flask Imports
-from flask import Flask, render_template, g
+from flask import Flask, render_template, g, request
 import sqlite3
+import itertools as it
+import sys
 
 app = Flask(__name__)
 app.database = "formData.db"
@@ -13,9 +15,17 @@ def index():
     # When routed here render home page template
     return render_template("homePage.html")
 
-@app.route('/form')
+@app.route('/form', methods = ['GET','POST'])
 def form():
-    #When routed here render from template
+    nameInput = request.form['nameInput']
+    message = request.form['messageInput']
+    g.db = connect_db()
+    g.db.execute('INSERT INTO postData (name,message) values (?,?,?)' /
+                 (
+                     nameInput,
+                     message
+                 ))
+    g.db.close()
     return render_template("form.html")
 
 @app.route('/forum')

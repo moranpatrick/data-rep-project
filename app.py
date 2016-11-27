@@ -4,7 +4,6 @@
 from flask import Flask, render_template, g, request
 import sqlite3
 import itertools as it
-import sys
 
 app = Flask(__name__)
 app.database = "formData.db"
@@ -17,15 +16,14 @@ def index():
 
 @app.route('/form', methods = ['GET','POST'])
 def form():
-    nameInput = request.form['nameInput']
-    message = request.form['messageInput']
-    g.db = connect_db()
-    g.db.execute('INSERT INTO postData (name,message) values (?,?,?)' /
-                 (
-                     nameInput,
-                     message
-                 ))
-    g.db.close()
+    if request.method == 'POST':
+
+        nameInput = request.form['nameInput']
+        message = request.form['messageInput']
+        g.db = connect_db()
+        g.db.execute('INSERT INTO postData values(?,?)', (nameInput, message))
+        g.db.commit()
+        g.db.close()
     return render_template("form.html")
 
 @app.route('/forum')

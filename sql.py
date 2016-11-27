@@ -1,6 +1,6 @@
 import sqlite3
 
-with sqlite3.connect("formData.db") as connection:
+with sqlite3.connect("data/formData.db") as connection:
     c = connection.cursor()
     c.execute("""CREATE TABLE postData(name TEXT, message TEXT)""")
     c.execute('INSERT INTO postData VALUES("Patrick", "I think Spurs Will win the league!!.")')

@@ -6,7 +6,7 @@ import sqlite3
 import itertools as it
 
 app = Flask(__name__)
-app.database = "formData.db"
+app.database = "data/formData.db"
 
 
 @app.route('/')

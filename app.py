@@ -8,7 +8,6 @@ import itertools as it
 app = Flask(__name__)
 app.database = "data/formData.db"
 
-
 @app.route('/')
 def index():
     # When routed here render home page template

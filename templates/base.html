@@ -37,7 +37,7 @@
 			<!-- Collect the nav links for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			  <ul class="nav navbar-nav">
-				<li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
+				<li><a href="/">Home<span class="sr-only">(current)</span></a></li>
 				<li><a href="/form">Post to Forum</a></li>
 				<li><a href="/forum">Forum</a></li>
 			  </ul>
@@ -48,9 +48,7 @@
     <div class="container">
 
       <!-- child template -->
-      {% block content %}
-
-      {% endblock %}
+      {% block content %}{% endblock %}
 
       <!-- errors -->
       {% if error %}
@@ -61,13 +59,14 @@
       {% for message in get_flashed_messages() %}
         {{ message }}
       {% endfor %}
-    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <p>This Is The Footer <a href="/login">Admin Login</a></p>
+
+    </div>
+        <footer class="footer">
+        <div>
+            <p><a href="/login">Admin Login</a></p>
         </div>
     </footer>
-
   </body>
+
 </html>

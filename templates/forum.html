@@ -1,10 +1,10 @@
 <!-- Child Template -->
 {% extends "base.html" %}
 {% block content %}
-    
+    <h2>FORUM</h2>
     <div class="form-group" style="margin-left: 20px; margin-right: 20px">
             {% for post in posts %}
-                <textarea class="form-control" rows="4">
+                <textarea class="form-control" rows="3">
                 {{ post.name }} Says:
                 {{ post.message }}
                 </textarea>

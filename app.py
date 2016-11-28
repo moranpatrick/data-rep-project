@@ -27,7 +27,9 @@ def form():
         g.db.execute('INSERT INTO postData values(?,?)', (nameInput, message))
         g.db.commit()
         g.db.close()
-    return render_template("form.html")
+        return redirect(url_for('forum'))
+    else:
+        return render_template("form.html")
 
 @app.route('/forum')
 def forum():

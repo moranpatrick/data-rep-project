@@ -8,16 +8,17 @@
 
 <h2>Hey Soccer fans!! </h2>
 <h2>Welcome to out Fantasy Football Forum where beginners and seasoned vets can read and share their knowledge. Every week we will post our Fantasy Football Team and hope it helps you get those vital points. Nobody wants to be at the bottom of the table, so take our tips and wipe the smirk of your best mate.</h2>
-<h3>Heres is this weeks Team!</h3>
-<div class="form-group" style="margin-left: 20px; margin-right: 20px">
+<h3>Here is this weeks Team!</h3>
+
+
     {% for post in posts %}
-        <h3>{{ post.position }}</h3>
-        <textarea class="form-control" id = teamText rows="1">
-            {{ post.names }}
+        <h3>{{ post.position }}
+        <textarea class="form-control" rows="1" readonly>
+             {{ post.names }}
         </textarea>
+        </h3>
     {% endfor %}
     <br/>
-</div>
-<p>Click <a href="/form">Here</a> To go to the Form Page</p>
+
 {% endblock %}
 

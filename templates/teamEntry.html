@@ -3,7 +3,6 @@
 
 <h1>Team Entry Admin Page Only</h1>
 
-<p>You are Logged In.<a href="/logout"> Logout?</a></p>
 <!-- Html Form Control -->
 <form style="margin-left: 20px; margin-right: 20px" method="POST" action="{{ url_for('teamEntry') }}">
   <div class="form-group">
@@ -18,6 +17,6 @@
     <!--Submit button-->
     <button type="submit" id = "submit" class="btn btn-primary">Submit</button>
 </form>
-
-
+<br />
+<p>You are Logged In.<a href="/logout"> Logout?</a></p>
 {% endblock %}

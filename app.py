@@ -21,7 +21,6 @@ def index():
 @app.route('/form', methods = ['GET','POST'])
 def form():
     if request.method == 'POST':
-
         nameInput = request.form['nameInput']
         message = request.form['messageInput']
         g.db = connect_db()
@@ -39,8 +38,15 @@ def forum():
     # When routed here render forum template
     return render_template("forum.html", posts=posts)
 
-@app.route('/teamEntry')
+@app.route('/teamEntry', methods = ['GET','POST'])
 def teamEntry():
+    if request.method == 'POST':
+        position = request.form['positionInput']
+        names = request.form['namesInput']
+        g.db = connect_db()
+        g.db.execute('update teamData set position=?,names=? where position = ?', (request.form['positionInput'], request.form['namesInput'], request.form['positionInput']))
+        g.db.commit()
+        g.db.close()
     return render_template("teamEntry.html")
 
 def connect_db():

@@ -11,8 +11,12 @@ app.secret_key = "testLogin"
 
 @app.route('/')
 def index():
+    g.db = connect_db()
+    cur = g.db.execute('select * from teamData')
+    posts = [dict(position=row[0], names=row[1]) for row in cur.fetchall()]
+    g.db.close()
     # When routed here render home page template
-    return render_template("homePage.html")
+    return render_template("homePage.html", posts = posts)
 
 @app.route('/form', methods = ['GET','POST'])
 def form():

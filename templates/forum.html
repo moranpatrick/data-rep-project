@@ -3,12 +3,12 @@
 {% block content %}
     
     <div class="form-group" style="margin-left: 20px; margin-right: 20px">
-        <textarea class="form-control" rows="20">
             {% for post in posts %}
+                <textarea class="form-control" rows="4">
                 {{ post.name }} Says:
                 {{ post.message }}
+                </textarea>
             {% endfor %}
-        </textarea>
     </div>
 
 {% endblock %}

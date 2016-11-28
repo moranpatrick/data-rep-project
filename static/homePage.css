@@ -11,13 +11,21 @@ h2{
     color: black;
     font-family: "Times New Roman";
 }
+
+h3{
+    font: bold;
+    text-align: center;
+    color: black;
+    font-family: "Times New Roman";
+}
 body{
     background: url(background3.jpeg) no-repeat;
     background-size: 100%;
 }
 
-div{
-
+#teamText
+{
+    text-align: center;
 }
 
 .footer{

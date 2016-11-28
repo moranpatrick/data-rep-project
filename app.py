@@ -1,12 +1,13 @@
 
 
 #Flask Imports
-from flask import Flask, render_template, g, request
+from flask import Flask, render_template, g, request, url_for, session, redirect
 import sqlite3
 import itertools as it
 
 app = Flask(__name__)
 app.database = "data/formData.db"
+app.secret_key = "testLogin"
 
 @app.route('/')
 def index():
@@ -34,8 +35,32 @@ def forum():
     # When routed here render forum template
     return render_template("forum.html", posts=posts)
 
+@app.route('/teamEntry')
+def teamEntry():
+    return render_template("teamEntry.html")
+
 def connect_db():
     return sqlite3.connect(app.database)
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
+            error = 'Invalid Crediantials!! Try Again'
+        else:
+            session['logged_in'] = True
+            return redirect(url_for('teamEntry'))
+
+    return render_template("login.html", error=error)
+
+@app.route('/logout')
+def logout():
+    #session.pop deletes the key by setting logged_in from true to None
+    session.pop('logged_in', None)
+    message = 'suceefully logged out'
+    #return to homepage after a logout
+    return redirect(url_for('index'))
 
 
 #Run App

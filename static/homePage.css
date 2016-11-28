@@ -11,3 +11,11 @@ body{
 div{
 
 }
+
+.footer{
+    background-color: #222;
+    border-color: #080808;
+    color: white;
+    margin-top: 50px;
+    padding-top: 50px;
+}

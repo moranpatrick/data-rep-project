@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parent Template</title>
+    <title>Homepage</title>
       <!-- Libraries needed -->
     <!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -10,7 +10,7 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <!-- Our Own Custom Style Sheet -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homePage.css') }}">
 	<!-- Latest compiled and minified JavaScript -->
@@ -48,7 +48,9 @@
     <div class="container">
 
       <!-- child template -->
-      {% block content %}{% endblock %}
+      {% block content %}
+
+      {% endblock %}
 
       <!-- errors -->
       {% if error %}
@@ -60,6 +62,13 @@
         {{ message }}
       {% endfor %}
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>This Is The Footer</p>
+            <p><a href="/login">Admin Login</a></p>
+        </div>
+    </footer>
 
   </body>
 </html>

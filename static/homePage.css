@@ -1,11 +1,19 @@
 /*Custom CSS File for Web App */
+
 h1{
     text-align: center;
-    color: red;
+    color: black;
+    font-family: Algerian;
 }
 
+h2{
+    text-align: center;
+    color: black;
+    font-family: "Times New Roman";
+}
 body{
-
+    background: url(background3.jpeg) no-repeat;
+    background-size: 100%;
 }
 
 div{
@@ -17,6 +25,7 @@ div{
     bottom:0;
     width:100%;
     height:50px;
+    position: fixed;
     background-color: #222;
     border-color: #080808;
     color: white;

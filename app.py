@@ -1,9 +1,6 @@
-
-
 #Flask Imports
 from flask import Flask, render_template, g, request, url_for, session, redirect
 import sqlite3
-import itertools as it
 
 app = Flask(__name__)
 app.database = "data/formData.db"
@@ -27,17 +24,22 @@ def form():
         g.db.execute('INSERT INTO postData values(?,?)', (nameInput, message))
         g.db.commit()
         g.db.close()
+        #if request is a post redirect to forum
         return redirect(url_for('forum'))
     else:
+        #otherwise render form template
         return render_template("form.html")
 
 @app.route('/forum')
 def forum():
+    #establish connection to database
     g.db = connect_db()
+    #execute query
     cur = g.db.execute('select * from postData')
+    #convert into a dictionary so python can understand it
     posts = [dict(name=row[0], message=row[1]) for row in cur.fetchall()]
     g.db.close()
-    # When routed here render forum template
+    # When routed here render forum template, pass through variable to the html template
     return render_template("forum.html", posts=posts)
 
 @app.route('/teamEntry', methods = ['GET','POST'])

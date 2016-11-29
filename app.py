@@ -44,9 +44,10 @@ def forum():
 def teamEntry():
     if request.method == 'POST':
         position = request.form['positionInput']
+        position = position.upper()
         names = request.form['namesInput']
         g.db = connect_db()
-        g.db.execute('update teamData set position=?,names=? where position = ?', (request.form['positionInput'], request.form['namesInput'], request.form['positionInput']))
+        g.db.execute('update teamData set position=?,names=? where position = ?', (position, names, position))
         g.db.commit()
         g.db.close()
     return render_template("teamEntry.html")

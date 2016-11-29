@@ -6,14 +6,14 @@
 <form style="margin-left: 20px; margin-right: 20px" method="POST" action="{{ url_for('form') }}">
   <!--name input-->
   <div class="form-group">
-    <label for="nameInput">Name</label>
+    <label for="nameInput">Enter your Name</label>
     <input type="text" class="form-control" name = "nameInput" id="nameInput" placeholder="Please Enter your name">
     <small id="nameHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
   </div>
   <!--message imput-->
   <div class="form-group">
     <label for="textArea">Enter Your Post to the Forum Below</label>
-    <textarea type ="text" class="form-control" style="text-align: left" name = "messageInput" id="messageInput" rows="5"></textarea>
+    <textarea type ="text" class="form-control" name = "messageInput" id="messageInput" rows="5"></textarea>
   </div>
 
   <button type="submit" value="/forum" id = "submit" class="btn btn-primary">Submit</button>

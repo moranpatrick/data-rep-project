@@ -13,11 +13,13 @@
 
     {% for post in posts %}
         <h3>{{ post.position }}
-        <textarea class="form-control" rows="1" readonly>
+        <textarea class="form-control" id = "teamDisplay" rows="1" readonly>
              {{ post.names }}
         </textarea>
         </h3>
     {% endfor %}
+    <br/>
+    <br/>
     <br/>
 
 {% endblock %}

@@ -7,7 +7,7 @@ with sqlite3.connect("data/formData.db") as connection:
     c.execute('INSERT INTO postData VALUES("Gerry", "I also think that. Also Harry Kane will be top goalscorer again!")')
 
     c.execute("""CREATE TABLE teamData(position TEXT, names TEXT)""")
-    c.execute('INSERT INTO teamData VALUES("GoalKeeper", "Hugo Lloris")')
-    c.execute('INSERT INTO teamData VALUES("BackLine", "testest")')
-    c.execute('INSERT INTO teamData VALUES("Mid-Field", "test, test ,test ,test")')
-    c.execute('INSERT INTO teamData VALUES("Forwards", "test, test ,test ,test")')
+    c.execute('INSERT INTO teamData VALUES("GOALKEEPER", "Hugo Lloris")')
+    c.execute('INSERT INTO teamData VALUES("BACKLINE", "testest")')
+    c.execute('INSERT INTO teamData VALUES("MIDFIELD", "test, test ,test ,test")')
+    c.execute('INSERT INTO teamData VALUES("FORWARDS", "test, test ,test ,test")')

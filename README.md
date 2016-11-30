@@ -49,6 +49,32 @@ In the beginning we were unsure if these features would be added but we successf
 These features allow the admin, in this case Gerard and myself, to login and change our team selection, any time we want, from the website using the database to store our data. Instructions to do this and more will in the [Running the Application](#run-app) section.
 
 ## Meetings<a name = "team-members"></a>
+Team meetings were held in either the Canteen or Library study rooms when they were available in the Galway Mayo Institute of Technology(GMIT), Dublin Road, County Galway.
+During the course of the Project we had 6 meetings in total.
+
+* Thursday 10th November 2016 13.00
+
+We met in Study Room 5A and discussed on what we should do our Single page web-app on. Making sure it met the course projects requirements and was useful to the user.
+
+* Thursday 17th November 10.00
+
+We met in the Canteen and wrote out the html templates needed and what they should look like for our app. We also discussed the software requirements we would need to run the application and set out that we would have them installed and ready for the next meeting.
+
+* Tuesday 22nd November 13.00
+
+We met in Study Room 5B and we set up our git repository and published our first commit with the structure of our app. We then decided on what steps to work on next. Patrick would start on the routing system and form pages. Gerard would begin setting up the structure of our html pages and connecting up our pages to bootstrap.
+
+* Thursday 24th November 10.00
+
+We met up in Study Room 5A and began setting up our database. We initially decided to use couch.db. We hit a few problems with couch.db and found little documentation online to help. Patrick was going to continue on researching and if could not be solved we would look into using Sqlite3.
+
+* Friday 25th November 10.00
+
+We had a emergency meeting Friday over the phone about our database. We both decided to switch to Sqlite3 as there was more documentation online and we have experience of SQL from Second Year Computer Software and development. Patrick would work on importing Sqlite3 into the project and creating our sql.py. Gerard would work on taking in data from the form and putting it out to our database. We would meet up in Patricks house later to both work on html pages and css.
+
+* Monday 28th November 12.00
+
+We met up in Study Room 6A. After getting the main functionality of the app working we decided we had time to do the Advanced Features. Patrick worked on setting up login page and routing. Gerard worked on TeamEntry page, input of data to database and outputting it to the Home page. We then worked on tidying up the css and code. Patrick had previously made a template for the README.md file. We separated out what parts of the README.md we would carry out. Gerard would take on Team Members, Meetings and Running the Application. Patrick would work on Project Overview and Architecture. We would both work on References. This would be our last meeting.
 
 ## Running The Application<a name = "run-app"></a>
 

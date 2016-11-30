@@ -6,6 +6,7 @@
 [Team Members](#team-members)  
 [Project Overview](#overview)  
 [Meetings](#meetings)  
+[Integrated Development Environment](#ide)  
 [Running the Application](#run-app)  
 [Architecture](#architecture)  
 [References](#References)  
@@ -33,6 +34,7 @@ After deciding on a fantasy football theme we took a look at some other web appl
 
 * Below are some of these examples  
 http://www.fantasyfootballscout.co.uk/  
+http://www.fiso.co.uk/forum/viewforum.php?f=18   
 
 Given the timeframe for the project was only a few months our web application was naturally going to be smaller than some of the examples above.
 
@@ -48,7 +50,7 @@ Given the timeframe for the project was only a few months our web application wa
 In the beginning we were unsure if these features would be added but we successfully managed to get them up and running in time.  
 These features allow the admin, in this case Gerard and myself, to login and change our team selection, any time we want, from the website using the database to store our data. Instructions to do this and more will in the [Running the Application](#run-app) section.
 
-## Meetings<a name = "team-members"></a>
+## Meetings<a name = "meetings"></a>
 Team meetings were held in either the Canteen or Library study rooms when they were available in the Galway Mayo Institute of Technology(GMIT), Dublin Road, County Galway.
 During the course of the Project we had 6 meetings in total.
 
@@ -74,36 +76,44 @@ We had a emergency meeting Friday over the phone about our database. We both dec
 
 * Monday 28th November 12.00
 
-We met up in Study Room 6A. After getting the main functionality of the app working we decided we had time to do the Advanced Features. Patrick worked on setting up login page and routing. Gerard worked on TeamEntry page, input of data to database and outputting it to the Home page. We then worked on tidying up the css and code. Patrick had previously made a template for the README.md file. We separated out what parts of the README.md we would carry out. Gerard would take on Team Members, Meetings and Running the Application. Patrick would work on Project Overview and Architecture. We would both work on References. This would be our last meeting.
+We met up in Study Room 6A. After getting the main functionality of the app working we decided we had time to do the Advanced Features. Patrick worked on setting up login page and routing. Gerard worked on TeamEntry page, input of data to database and outputting it to the Home page. We then worked on tidying up the css and code. Patrick had previously made a template for the README.md file. We separated out what parts of the README.md we would carry out. Gerard would take on Team Members, Meetings and Running the Application. Patrick would work on Project Overview and Architecture. We would both work on References. This would be our last meeting.  
+
+## Integrated Development Environment<a name = "ide"></a>
+![alt text](screenshots/pycharm.png "pycharm.png")  
+
+The integrated development environment (IDE) we are using to manage our web application is [PyCharm](https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html?&gclid=CjwKEAiAjvrBBRDxm_nRusW3q1QSJAAzRI1tMeRbsl3nnPUUTJ5L67BdVe3Y8VA9VU3MoAYDhNFNLBoCmKfw_wcB&gclsrc=aw.ds.ds&dclid=CMTU-e7C0dACFY2D7QodmzYJxw). PyCharm was developed by [JetBrains](https://www.jetbrains.com/) and is the perfect environment for working with python.
+
+Being students allowed us to get the professional edition of the IDE free of charge for as long as we are studying. If you are interested click [here](https://www.jetbrains.com/student/).
 
 ## Running The Application<a name = "run-app"></a>
 
 ## Architecture<a name = "architecture"></a>
-###### In our project we have used:   
-* **Languages Used**   
-![alt text](screenshots/pythonlogo.png "pythonlogo.png")    
-Python  
-https://www.python.org/   
-![alt text](screenshots/html.png "html.png")  
-HTML5   
-https://www.w3.org/html/  
+#### In our project we have used:    
 
- ![alt text](screenshots/css3.jpg "html.png")  
-CSS3    
-https://www.w3.org/Style/CSS/Overview.en.html  
+* **Languages**
 
-* **Frameworks**  
-Flask  
-http://flask.pocoo.org/
+Python | HTML | CSS
+------ |  --- | ---
+![alt text](screenshots/pythonlogo.png "pythonlogo.png")  |  ![alt text](screenshots/html.png "html.png") |   ![alt text](screenshots/css3.jpg "html.png")   
+ https://www.python.org/ | https://www.w3.org/html/  | https://www.w3.org/Style/CSS/Overview.en.html   
+
+ * **Frameworks**  
+  Flask  
+ http://flask.pocoo.org/  
+
 * **Libraries**  
-![alt text](screenshots/bt.png "bootstrap")    
-Bootstrap  
-http://getbootstrap.com/  
 
-* **Databases**   
- ![alt text](screenshots/sqlite.png "sqlite")    
-Sqlite3  
-https://sqlite.org/  
+| Bootstrap | JQuery
+| --------- | ------   
+| ![alt text](screenshots/bt.png "bootstrap") |  ![alt text](screenshots/jquery.png "jquery")
+| http://getbootstrap.com/ |  https://jquery.com/
+
+* **Databases**  
+
+| Sqlite  
+| ------    
+|  ![alt text](screenshots/sqlite.png "sqlite")  
+|  https://sqlite.org/     
 
 ###### Jinja 2  
 Jinja2 is a modern and designer-friendly templating language for Python, modelled after Django’s templates. It is fast, widely used and secure with the optional sandboxed template execution environment. It comes installed and ready to use with the flask framework.  
@@ -171,4 +181,6 @@ http://gel.ed.ac.uk/sites/default/files/styles/landscape_breakpoints_theme_uoe_m
 http://webroad.pl/wp-content/uploads/2014/07/css3-logo-250x250.jpg  
 http://tupleware.cs.brown.edu/wordpress/wp-content/uploads/2014/03/python.png  
 https://davidwalsh.name/demo/html5250.png?preview
-http://jinja.pocoo.org/docs/dev/_static/jinja-small.png
+http://jinja.pocoo.org/docs/dev/_static/jinja-small.png  
+http://d3gnp09177mxuh.cloudfront.net/tech-page-images/jquery.png  
+https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png

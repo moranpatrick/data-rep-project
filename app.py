@@ -81,7 +81,6 @@ def login():
             flash('Invalid Credentials - Please Try Again!')
         else:
             # if the users credentials are correct then the value true is assigned to logged in key
-            flash('Login Successful!')
             session['logged_in'] = True
             return redirect(url_for('teamEntry'))
 

@@ -1,6 +1,16 @@
 /*Custom CSS File for Web App */
+.active a{
+    color: white !important;
+    font-weight: bold;
+
+}
+a:hover {
+    color: white;
+}
 
 .container{
+    margin-top: 80px;
+    margin-bottom: 80px;
     background-color:black;
     z-index:0;
     opacity:0.8;
@@ -10,6 +20,7 @@ h1{
     color: white;
     text-shadow: 3px 3px 0px #000;
     font-family: Algerian;
+    font-weight: bold;
 }
 
 h2{
@@ -35,7 +46,7 @@ body{
 }
 
 textarea{
-    overflow: hidden;
+    overflow: auto;
     resize: none;
 }
 
@@ -44,11 +55,13 @@ label{
 }
 
 .form-control{
+    text-align: left;
     color: black;
     font-size: large;
 }
 #teamDisplay {
     text-align: center;
+    border: 3px solid green;
 }
 
 .footer{
@@ -63,6 +76,18 @@ label{
     padding-right: 25px;
     text-align: right;
 }
+
+.flashes{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+#teamHeaders{
+    color: goldenrod;
+    text-decoration: underline;
+}
+
 
 
 

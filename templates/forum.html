@@ -2,13 +2,16 @@
 {% extends "base.html" %}
 {% block content %}
     <h2>FORUM</h2>
-    <div class="form-group" style="margin-left: 20px; margin-right: 20px">
+    <div class="form-group">
         {% for post in posts %}
-            <textarea class="form-control" rows="3" readonly>
-                {{ post.name }} Says:
-                {{ post.message }}
+            <textarea type ="text" class="form-control" rows="3" readonly>
+{{ post.name }} Says:
+{{ post.message }}
             </textarea>
+            <br />
         {% endfor %}
         <br />
+    <a href="#top">Go to top</a>
     </div>
+
 {% endblock %}

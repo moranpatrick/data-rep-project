@@ -47,23 +47,24 @@ label{
     color: black;
     font-size: large;
 }
-#teamDisplay
-{
+#teamDisplay {
     text-align: center;
-    font-size: larger;
 }
 
 .footer{
     position:fixed;
     bottom:0;
     width:100%;
-    height:50px;
+    height:40px;
     background-color: #222;
     border-color: #080808;
     color: white;
-    padding-top: 15px;
+    padding-top: 11px;
     padding-right: 25px;
     text-align: right;
 }
+
+
+
 
 

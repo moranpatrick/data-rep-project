@@ -1,22 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>Team Entry Admin Page Only</h1>
+    <h1>Team Entry Admin Page Only</h1>
 
-<!-- Html Form Control -->
-<form style="margin-left: 20px; margin-right: 20px" method="POST" action="{{ url_for('teamEntry') }}">
-  <div class="form-group">
-    <label for="positionInput">Please Enter the position?(in this order GoalKeeper,BackLine,MidField,Forwards):</label>
-    <input type="text" class="form-control" name = "positionInput" id="positionInput" placeholder="GoalKeeper">
-  </div>
-  <!--players imput-->
-  <div class="form-group">
-    <label for="textArea">Enter Your players for the above position(note there can only be one goalkeeper):</label>
-    <textarea type ="text" class="form-control" name = "namesInput" id="namesInput" rows="2"></textarea>
-  </div>
-    <!--Submit button-->
-    <button type="submit" id = "submit" class="btn btn-primary">Submit</button>
-</form>
-<br />
-<p>You are Logged In.<a href="/logout"> Logout?</a></p>
+    <!-- Html Form Control -->
+    <form style="margin-left: 20px; margin-right: 20px" method="POST" action="{{ url_for('teamEntry') }}">
+        <div class="form-group">
+            <label for="positionInput">Please Enter the position?(In this order Goalkeeper, Backline, Midfield, Forwards):</label>
+            <input type="text" class="form-control" name = "positionInput" id="positionInput" placeholder="GoalKeeper">
+        </div>
+        <!--players imput-->
+        <div class="form-group">
+            <label for="textArea">Enter Your players for the above position(note there can only be one goalkeeper):</label>
+            <textarea type ="text" class="form-control" name = "namesInput" id="namesInput" rows="2"></textarea>
+        </div>
+        <!--Submit button-->
+        <button type="submit" id = "submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br />
+    <p>You are Logged In.<a href="/logout"> Logout?</a></p>
 {% endblock %}

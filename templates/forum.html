@@ -3,7 +3,7 @@
 {% block content %}
     <h2>FORUM</h2>
     <div class="form-group">
-        <!-- Display posts from the database -->
+        <!-- Display posts from the database from postData -->
         {% for post in posts %}
             <textarea type ="text" class="form-control" rows="3" readonly>
 {{ post.name }} Says:

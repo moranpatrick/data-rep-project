@@ -87,6 +87,83 @@ Being students allowed us to get the professional edition of the IDE free of cha
 
 ## Running The Application<a name = "run-app"></a>
 
+The application is written using the Flask library in Python 3.5.2. Both must be installed to run the project.
+
+We use the sqlite3 package for persistence in the application. This must also be installed. However no further configuration of our setup is required, as the database is fully contained in the data directory in this repository.
+
+###### Links for installation of software and how to install them.
+
+* Python 3.5.2
+
+You will be able to download this version of Python on the www.python.org website.
+You can also click the link provided below to navigate to this page:
+(https://www.python.org/downloads/)
+
+After clicking on the Download Python 3.5.2, navigate down the page and select which download is applicable to your laptop or desktop computer.
+
+After the file has downloaded click to begin installation. Follow the step by step guide and then click finish. We recommend the default options. To check that it has installed properly go to your Command Prompt and type in the command:
+
+```
+> python
+```
+This should return the version of python installed.
+
+* Flask
+
+To install Flask seems more complicated but is actually pretty easy.
+
+Lets start with pip. If you have pip installed on your device already you can skip this step. Pip is a Package management system written in python.
+
+- For windows:
+Since we have previously installed python this is a lot easier. To install open a command prompt window and navigate to the folder containing get-pip.py . Then run:
+```
+> python get-pip.py
+```
+ This will install pip . Verify a successful installation by opening a command prompt window and navigating to your Python installation's script directory.
+
+- For Mac:
+On Mac it is far simpler just open your command prompt and use the command:
+```
+> sudo easy_install pip
+```
+Now to install flask. Now that we have pip installed it is very simple.
+Simply in your command prompt for Windows use the command:
+```
+> pip install flask
+```
+And for mac type the command:
+```
+> sudo pip install flask
+```
+
+* Sqlite3
+
+Some new packages of python already contain sqlite libraries and do not require you to download sqlite3 but just incase you dont have them this is how you download sqlite3:
+
+To download sqlite visit the Sqlite downloads page which is linked below:
+(https://www.sqlite.org/download.html)
+
+Scrolling down the menu you will find windows and mac options. Within in those option you should see a sqlite3 tools package. Click to download.
+
+After downloading extract the files from the zip folder and if you look inside the folder you will find Sqlite3.exe. Copy this and navigate to your route and create a new folder in program files called sqlite. Open the folder and inside paste in the exe file you just copied. To make sure that sqlite3 is properly installed open your command prompt and navigate to the new sqlite folder you just created. Then type the command "sqlite3" this should return the version of sqlite installed.
+
+###### Running the Application.
+
+First open your command prompt. Then navigate to the folder where the application is saved. If the prerequisites have been installed correctly the application can be run locally:
+
+- First you will have to set up the Sql database. simply type the command:
+```
+> python sql.py"
+```
+
+- Second you will run the application. Simply type the command:
+```
+> python app.py
+```
+
+Once the application is running, it can be accessed by pointing your browser at http://127.0.0.1:5000/.
+
+
 ## Architecture<a name = "architecture"></a>
 #### In our project we have used:    
 

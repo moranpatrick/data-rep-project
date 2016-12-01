@@ -1,3 +1,4 @@
+<!-- Child Template Extending from base class -->
 {% extends "base.html" %}
 {% block content %}
 
@@ -11,7 +12,7 @@
             <br />
         </form>
         <br />
-
+            <!-- Flash Messages -->
             {% if messages %}
                 <ul class=flashes>
                     {% for message in messages %}

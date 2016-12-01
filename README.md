@@ -19,7 +19,7 @@
 
 One of our third year software projects is to develop a single-page web application (SPA) written in python. The module is called Data Representation and Querying and is taught to us in [GMIT](http://www.gmit.ie) Galway, Ireland.  
 
-![alt text](screenshots/python.jpg "python logo") ![alt text](screenshots/flask.jpg "flask logo")
+![alt text](https://aptonic.com/blog/wp-content/uploads/2015/08/python-logo.png)  ![alt text](http://zewaren.net/site/sites/default/files/imagepicker/1/FlaskLogo.png)
 
 The following are the main instructions from the project specifications.  
 >You are required to develop a single-page web application (SPA) written
@@ -79,7 +79,7 @@ We had a emergency meeting Friday over the phone about our database. We both dec
 We met up in Study Room 6A. After getting the main functionality of the app working we decided we had time to do the Advanced Features. Patrick worked on setting up login page and routing. Gerard worked on TeamEntry page, input of data to database and outputting it to the Home page. We then worked on tidying up the css and code. Patrick had previously made a template for the README.md file. We separated out what parts of the README.md we would carry out. Gerard would take on Team Members, Meetings and Running the Application. Patrick would work on Project Overview and Architecture. We would both work on References. This would be our last meeting.  
 
 ## Integrated Development Environment<a name = "ide"></a>
-![alt text](screenshots/pycharm.png "pycharm.png")  
+![alt text](https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png)  
 
 The integrated development environment (IDE) we are using to manage our web application is [PyCharm](https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html?&gclid=CjwKEAiAjvrBBRDxm_nRusW3q1QSJAAzRI1tMeRbsl3nnPUUTJ5L67BdVe3Y8VA9VU3MoAYDhNFNLBoCmKfw_wcB&gclsrc=aw.ds.ds&dclid=CMTU-e7C0dACFY2D7QodmzYJxw). PyCharm was developed by [JetBrains](https://www.jetbrains.com/) and is the perfect environment for working with python.
 
@@ -94,7 +94,7 @@ Being students allowed us to get the professional edition of the IDE free of cha
 
 Python | HTML | CSS
 ------ |  --- | ---
-![alt text](screenshots/pythonlogo.png "pythonlogo.png")  |  ![alt text](screenshots/html.png "html.png") |   ![alt text](screenshots/css3.jpg "html.png")   
+![alt text](http://tupleware.cs.brown.edu/wordpress/wp-content/uploads/2014/03/python.png)  |  ![alt text](https://davidwalsh.name/demo/html5250.png?preview) |   ![alt text](http://webroad.pl/wp-content/uploads/2014/07/css3-logo-250x250.jpg)   
  https://www.python.org/ | https://www.w3.org/html/  | https://www.w3.org/Style/CSS/Overview.en.html   
 
  * **Frameworks**  
@@ -105,19 +105,19 @@ Python | HTML | CSS
 
 | Bootstrap | JQuery
 | --------- | ------   
-| ![alt text](screenshots/bt.png "bootstrap") |  ![alt text](screenshots/jquery.png "jquery")
+| ![alt text](http://gel.ed.ac.uk/sites/default/files/styles/landscape_breakpoints_theme_uoe_mobile_1x/public/thumbnails/image/bootstrap250x250.png?itok=pRJ7rNAz) |  ![alt text](http://d3gnp09177mxuh.cloudfront.net/tech-page-images/jquery.png)
 | http://getbootstrap.com/ |  https://jquery.com/
 
 * **Databases**  
 
 | Sqlite  
 | ------    
-|  ![alt text](screenshots/sqlite.png "sqlite")  
+|  ![alt text](http://jaydata.org/Media/Default/Provider/LeadImage/sqlite-1.png)  
 |  https://sqlite.org/     
 
 ###### Jinja 2  
 Jinja2 is a modern and designer-friendly templating language for Python, modelled after Django’s templates. It is fast, widely used and secure with the optional sandboxed template execution environment. It comes installed and ready to use with the flask framework.  
- ![alt text](screenshots/jinja.png "jinja")   
+ ![alt text](http://jinja.pocoo.org/docs/dev/_static/jinja-small.png)   
 http://jinja.pocoo.org/docs/dev/  
 In order to have a clean, easier to read codebase we decided to make use of [Jinja Template Inheritence](http://flask.pocoo.org/docs/0.11/patterns/templateinheritance/). Its a  powerful feature of Jinja which allows the developer to build a base “skeleton” template that contains all the common elements of your site and defines blocks that child templates can override.  
 We have one html base class which contains all the static code for our web application, for example the navbar and the footer are written just once in here. All other child templates extend from this base class.  
@@ -176,11 +176,13 @@ http://getbootstrap.com/
 http://flask.pocoo.org/docs/0.11/    
 
 * Images  
-http://jaydata.org/Media/Default/Provider/LeadImage/sqlite-1.png  
-http://gel.ed.ac.uk/sites/default/files/styles/landscape_breakpoints_theme_uoe_mobile_1x/public/thumbnails/image/bootstrap250x250.png?itok=pRJ7rNAz
-http://webroad.pl/wp-content/uploads/2014/07/css3-logo-250x250.jpg  
-http://tupleware.cs.brown.edu/wordpress/wp-content/uploads/2014/03/python.png  
-https://davidwalsh.name/demo/html5250.png?preview
-http://jinja.pocoo.org/docs/dev/_static/jinja-small.png  
-http://d3gnp09177mxuh.cloudfront.net/tech-page-images/jquery.png  
-https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png
+https://aptonic.com/blog/wp-content/uploads/2015/08/python-logo.png  
+http://zewaren.net/site/sites/default/files/imagepicker/1/FlaskLogo.png  
+http://jaydata.org/Media/Default/Provider/LeadImage/sqlite-1.png    
+http://gel.ed.ac.uk/sites/default/files/styles/landscape_breakpoints_theme_uoe_mobile_1x/public/thumbnails/image/bootstrap250x250.png?itok=pRJ7rNAz    
+http://webroad.pl/wp-content/uploads/2014/07/css3-logo-250x250.jpg    
+http://tupleware.cs.brown.edu/wordpress/wp-content/uploads/2014/03/python.png      
+https://davidwalsh.name/demo/html5250.png?preview    
+http://jinja.pocoo.org/docs/dev/_static/jinja-small.png   
+http://d3gnp09177mxuh.cloudfront.net/tech-page-images/jquery.png    
+https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png  

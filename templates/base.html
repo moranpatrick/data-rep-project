@@ -1,3 +1,4 @@
+<!-- Main html file which will house all static code. eg. Navbar etc... -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +8,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
-                /*Found navbar state change solution on StackOverflow
+                /*Found how to navbar state. Solution on StackOverflow
                 http://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working*/
                 $('li.active').removeClass('active');
                 $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
@@ -21,14 +22,15 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
         <!-- Our Own Custom Style Sheet -->
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homePage.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <meta charset="UTF-8">
   </head>
   <body id="top">
-
+        <!-- Navbar at top - Navbar from bootstrap -->
         <!--nav-bar to navigate between pages with flask-->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
@@ -55,9 +57,7 @@
         </nav>
 
     <div class="container">
-
-        <!-- child template -->
-        {% block content %}{% endblock %}
+        {% block content %}<!-- child template goes here -->{% endblock %}
 
          <!-- errors -->
         {% if error %}
@@ -65,13 +65,13 @@
         {% endif %}
 
         <div class="flashes">
-            <!-- messages -->
+            <!--  display flash messages -->
             {% for message in get_flashed_messages() %}
                 {{ message }}
             {% endfor %}
         </div>
     </div>
-
+    <!-- Footer At bottom -->
     <footer class="footer">
         <div>
             <p><a href="/login">Admin Login</a></p>

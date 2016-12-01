@@ -1,10 +1,12 @@
 /*Custom CSS File for Web App */
 .active a{
+    /* navbar active class */
     color: white !important;
     font-weight: bold;
-
 }
+
 a:hover {
+    /*hover over links*/
     color: white;
 }
 
@@ -15,6 +17,7 @@ a:hover {
     z-index:0;
     opacity:0.8;
 }
+/* Header Styling h1 etc...*/
 h1{
     text-align: center;
     color: white;
@@ -37,6 +40,7 @@ h3{
     text-shadow: 3px 3px 0px #000;
     font-family: "Times New Roman";
 }
+/* Main body Css */
 body{
     background: url(soccer-ball.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -46,6 +50,7 @@ body{
 }
 
 textarea{
+    font-family: "Gill Sans MT";
     overflow: auto;
     resize: none;
 }
@@ -64,11 +69,14 @@ label{
     border: 3px solid green;
 }
 
+/* CSS styling for the footer*/
 .footer{
+    /*Footer fixed to the paged*/
     position:fixed;
     bottom:0;
     width:100%;
     height:40px;
+    /*Color same as navbar */
     background-color: #222;
     border-color: #080808;
     color: white;
@@ -76,7 +84,7 @@ label{
     padding-right: 25px;
     text-align: right;
 }
-
+/*CSS for flash messages */
 .flashes{
     text-align: center;
     color: red;

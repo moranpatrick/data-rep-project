@@ -1,4 +1,4 @@
-
+<!-- Child Template Extending from base class -->
 {% extends "base.html" %}
 {% block content %}
     <h1>Welcome</h1>
@@ -13,6 +13,7 @@
     <h2>Here is this weeks Team!</h2>
 
     <div class="teamPosts">
+    <!-- Display team data from database -->
     {% for post in posts %}
         <h3 id="teamHeaders">{{ post.position }}</h3>
         <textarea class="form-control" id = "teamDisplay" rows="1" readonly>{{ post.names }}</textarea>

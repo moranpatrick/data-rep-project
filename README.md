@@ -15,11 +15,13 @@
 - Patrick Moran <g00179039@gmit.ie>  
 - Gerard Naughton <g00209309@gmit.ie>
 
+
 ## Project Overview<a name = "overview"></a>  
 
 One of our third year software projects is to develop a single-page web application (SPA) written in python. The module is called Data Representation and Querying and is taught to us in [GMIT](http://www.gmit.ie) Galway, Ireland.  
 
-![alt text](screenshots/python.jpg)  ![alt text](http://zewaren.net/site/sites/default/files/imagepicker/1/FlaskLogo.png)
+![alt text](screenshots/python.png) ![alt text](screenshots/flask.jpg)  
+
 
 The following are the main instructions from the project specifications.  
 >You are required to develop a single-page web application (SPA) written
@@ -79,7 +81,7 @@ We had a emergency meeting Friday over the phone about our database. We both dec
 We met up in Study Room 6A. After getting the main functionality of the app working we decided we had time to do the Advanced Features. Patrick worked on setting up login page and routing. Gerard worked on TeamEntry page, input of data to database and outputting it to the Home page. We then worked on tidying up the css and code. Patrick had previously made a template for the README.md file. We separated out what parts of the README.md we would carry out. Gerard would take on Team Members, Meetings and Running the Application. Patrick would work on Project Overview and Architecture. We would both work on References. This would be our last meeting.  
 
 ## Integrated Development Environment<a name = "ide"></a>
-![alt text](https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png)  
+![alt text](screenshots/pycharm.png)  
 
 The integrated development environment (IDE) we are using to manage our web application is [PyCharm](https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html?&gclid=CjwKEAiAjvrBBRDxm_nRusW3q1QSJAAzRI1tMeRbsl3nnPUUTJ5L67BdVe3Y8VA9VU3MoAYDhNFNLBoCmKfw_wcB&gclsrc=aw.ds.ds&dclid=CMTU-e7C0dACFY2D7QodmzYJxw). PyCharm was developed by [JetBrains](https://www.jetbrains.com/) and is the perfect environment for working with python.
 
@@ -94,7 +96,7 @@ Being students allowed us to get the professional edition of the IDE free of cha
 
 Python | HTML | CSS
 ------ |  --- | ---
-![alt text](http://tupleware.cs.brown.edu/wordpress/wp-content/uploads/2014/03/python.png)  |  ![alt text](screenshots/html.png) |   ![alt text](screenshots/css3.jpg)   
+![alt text](screenshots/python.png) |  ![alt text](screenshots/html.png) | ![alt text](screenshots/css3.jpg)    
  https://www.python.org/ | https://www.w3.org/html/  | https://www.w3.org/Style/CSS/Overview.en.html   
 
  * **Frameworks**  
@@ -105,7 +107,7 @@ Python | HTML | CSS
 
 | Bootstrap | JQuery
 | --------- | ------   
-| ![alt text](screenshots/bt.png) |  ![alt text](http://d3gnp09177mxuh.cloudfront.net/tech-page-images/jquery.png)
+| ![alt text](screenshots/bt.png) |  ![alt text](screenshots/jquery.png)
 | http://getbootstrap.com/ |  https://jquery.com/
 
 * **Databases**  

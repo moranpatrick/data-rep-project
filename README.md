@@ -19,7 +19,7 @@
 
 One of our third year software projects is to develop a single-page web application (SPA) written in python. The module is called Data Representation and Querying and is taught to us in [GMIT](http://www.gmit.ie) Galway, Ireland.  
 
-![alt text](https://aptonic.com/blog/wp-content/uploads/2015/08/python-logo.png)  ![alt text](http://zewaren.net/site/sites/default/files/imagepicker/1/FlaskLogo.png)
+![alt text](screenshots/python.jpg)  ![alt text](http://zewaren.net/site/sites/default/files/imagepicker/1/FlaskLogo.png)
 
 The following are the main instructions from the project specifications.  
 >You are required to develop a single-page web application (SPA) written
@@ -94,7 +94,7 @@ Being students allowed us to get the professional edition of the IDE free of cha
 
 Python | HTML | CSS
 ------ |  --- | ---
-![alt text](http://tupleware.cs.brown.edu/wordpress/wp-content/uploads/2014/03/python.png)  |  ![alt text](https://davidwalsh.name/demo/html5250.png?preview) |   ![alt text](http://webroad.pl/wp-content/uploads/2014/07/css3-logo-250x250.jpg)   
+![alt text](http://tupleware.cs.brown.edu/wordpress/wp-content/uploads/2014/03/python.png)  |  ![alt text](screenshots/html.png) |   ![alt text](screenshots/css3.jpg)   
  https://www.python.org/ | https://www.w3.org/html/  | https://www.w3.org/Style/CSS/Overview.en.html   
 
  * **Frameworks**  
@@ -105,19 +105,19 @@ Python | HTML | CSS
 
 | Bootstrap | JQuery
 | --------- | ------   
-| ![alt text](http://gel.ed.ac.uk/sites/default/files/styles/landscape_breakpoints_theme_uoe_mobile_1x/public/thumbnails/image/bootstrap250x250.png?itok=pRJ7rNAz) |  ![alt text](http://d3gnp09177mxuh.cloudfront.net/tech-page-images/jquery.png)
+| ![alt text](screenshots/bt.png) |  ![alt text](http://d3gnp09177mxuh.cloudfront.net/tech-page-images/jquery.png)
 | http://getbootstrap.com/ |  https://jquery.com/
 
 * **Databases**  
 
 | Sqlite  
 | ------    
-|  ![alt text](http://jaydata.org/Media/Default/Provider/LeadImage/sqlite-1.png)  
+|  ![alt text](screenshots/sqlite.png)  
 |  https://sqlite.org/     
 
 ###### Jinja 2  
 Jinja2 is a modern and designer-friendly templating language for Python, modelled after Django’s templates. It is fast, widely used and secure with the optional sandboxed template execution environment. It comes installed and ready to use with the flask framework.  
- ![alt text](http://jinja.pocoo.org/docs/dev/_static/jinja-small.png)   
+ ![alt text](screenshots/jinja.png)   
 http://jinja.pocoo.org/docs/dev/  
 In order to have a clean, easier to read codebase we decided to make use of [Jinja Template Inheritence](http://flask.pocoo.org/docs/0.11/patterns/templateinheritance/). Its a  powerful feature of Jinja which allows the developer to build a base “skeleton” template that contains all the common elements of your site and defines blocks that child templates can override.  
 We have one html base class which contains all the static code for our web application, for example the navbar and the footer are written just once in here. All other child templates extend from this base class.  
